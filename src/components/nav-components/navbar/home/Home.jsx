@@ -87,6 +87,7 @@ const Home = () => {
         </motion.div>
       </div>
       <First />
+
     </div>
   );
 };
