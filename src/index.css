@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background: 
+    radial-gradient(circle, #32004b, #1a0026, #000000) 0 0 / 100% 100vh no-repeat,
+    linear-gradient(to bottom, #000000, #1a0026) 0 100vh / 100% 100vh no-repeat;
+  background-attachment: fixed, scroll;
+}

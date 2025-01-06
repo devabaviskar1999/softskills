@@ -1,0 +1,59 @@
+.header {
+  z-index: 1;
+    width: 100%;
+    height: 80px;
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 250px;
+background: transparent;
+position: fixed;
+  }
+   .active-link{
+    color: #bf3eff;
+  
+  }
+  .header .header-nav .active-link {
+    color: #bf3eff !important; /* Ensures the active style is applied */
+  }
+  
+  .header .header-logo-link {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -2px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.1s ease;
+  }
+
+  .header .header-logo-link span {
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+  .header .header-nav ul {
+    display: flex;
+    gap: 25px;
+  }
+  .header .header-nav ul li {
+    list-style: none;
+  }
+  .header .header-nav ul li .link {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  .header .header-nav ul li .link:hover{
+    color: #bf3eff;
+  }
+  .header-logo-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+  
