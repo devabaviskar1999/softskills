@@ -4,6 +4,7 @@ import "./Home.css";
 import Mainlogo from "../../../../assets/Mainlogo.svg";
 import { motion, useInView, useAnimation } from "framer-motion";
 import First from "../../../content-components/first/First";
+import Second from "../../../content-components/second/Second";
 
 const Home = () => {
   const ref = useRef(null);
@@ -33,60 +34,63 @@ const Home = () => {
           <img src={Mainlogo} alt="Main Logo" />
         </motion.div>
 
-        {/* Wrapper Animation */}
-        <motion.div
-          className="wrapper"
-          variants={{
-            hidden: { opacity: 0, y: 50 }, // Slide up from below
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate={mainControls}
-          transition={{ duration: 0.8, delay: 0.3 }}
-        >
-          <div className="static-txt">
-            Empowering Your Business <br /> With
-          </div>
-          <div className="dynamic-txts">
-            <Typewriter
-              options={{
-                strings: [
-                  "Data Entry",
-                  "Finance & Accounting",
-                  "Web Research",
-                  "Typing Services",
-                  "Photo Editing",
-                ],
-                autoStart: true,
-                loop: true,
-                typeSpeed: 90,
-                backSpeed: 15,
-                backDelay: 1000,
-              }}
-            />
-          </div>
-        </motion.div>
+        <div className="right-div">
+          {/* Wrapper Animation */}
+          <motion.div
+            className="wrapper"
+            variants={{
+              hidden: { opacity: 0, y: 50 }, // Slide up from below
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={mainControls}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            <div className="static-txt">
+              Empowering Your Business <br /> With
+              <div className="dynamic-txts">
+                <Typewriter
+                  options={{
+                    strings: [
+                      "Data Entry",
+                      "Finance & Accounting",
+                      "Web Research",
+                      "Typing Services",
+                      "Photo Editing",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    typeSpeed: 90,
+                    backSpeed: 15,
+                    backDelay: 1000,
+                  }}
+                />
+              </div>
+            </div>
+          </motion.div>
 
-        {/* Paragraph Animation */}
-        <motion.div
-          className="paragraph"
-          variants={{
-            hidden: { opacity: 0, y: 50 }, // Slide up from below
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate={mainControls}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        >
-          <p>
-            "At SoftSkills, we specialize in providing seamless outsourcing
-            solutions tailored to your needs. Our team of experts ensures
-            efficiency, cost savings, and exceptional customer support, enabling
-            your business to focus on growth."
-          </p>
-        </motion.div>
+          {/* Paragraph Animation */}
+          <motion.div
+            className="paragraph"
+            variants={{
+              hidden: { opacity: 0, y: 50 }, // Slide up from below
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={mainControls}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <p>
+              "At SoftSkills, we specialize in providing seamless outsourcing
+              solutions tailored to your needs. Our team of experts ensures
+              efficiency, cost savings, and exceptional customer support,
+              enabling your business to focus on growth."
+            </p>
+          </motion.div>
+        </div>
       </div>
       <First />
+      <Second/>
 
     </div>
   );

@@ -16,8 +16,8 @@ const First = () => {
     const x = e.clientX - left - width / 2; // X position relative to center
     const y = e.clientY - top - height / 2; // Y position relative to center
 
-    const rotateX = (y / height) * 20; // Adjust for more/less tilt
-    const rotateY = (x / width) * -20;
+    const rotateX = (y / height) * 30; // Adjust for more/less tilt
+    const rotateY = (x / width) * -30;
 
     textElement.style.transform = `perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   };

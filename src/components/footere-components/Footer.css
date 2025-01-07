@@ -1,0 +1,78 @@
+.footer {
+  display: flex;
+  width: 100vw;
+  min-height: 10vh;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  border-top: 1px solid white;
+}
+.main-left-div {
+  position: relative;
+  height: 200px;
+}
+.main-left-div .links {
+  display: flex;
+  gap: 4rem;
+}
+.main-left-div .links .input {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  button {
+    padding: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border: 1px solid rgb(192, 158, 255);
+    border-left: none;
+    cursor: pointer;
+  }
+  input {
+    background: transparent;
+    padding: 12px;
+    border: 1px solid rgb(192, 158, 255);
+    color: white;
+    border-right: none;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+}
+.main-left-div .links ul {
+  display: flex;
+}
+.main-left-div .links ul li {
+  list-style: none;
+  margin: 6px;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.main-left-div .links ul li:hover {
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+.main-left-div .icons {
+  margin-top: 9px;
+}
+.main-left-div .icons a {
+  color: white;
+
+  margin-left: 12px;
+  font-size: 12px;
+}
+.main-left-div .icons .instagram:hover {
+  color: deeppink;
+}
+.main-left-div .icons .facebook:hover {
+  color: blue;
+}
+.main-left-div .icons .linkedin:hover {
+  color: rgb(0, 179, 255);
+}
+
+.main-left-div .copyright-text {
+  margin-top: 7rem;
+}
+.footer .map{
+    border-radius: 3%;
+}
